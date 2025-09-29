@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 5 Project</title>
+    <style>
+ul {
+    list-style-type: square;
+}
+ol {
+    list-style-type: upper-roman;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+}
+</style>
+</head>
+<h1>🎧Favorite Songs🎧</h1>
+<body>
+  <table>
+    <caption>List of songs</caption>
+    <tr>
+        <th>Song Title</th>
+        <th>Artist</th>
+        <th>Mood</th>
+</tr>
+<tr>
+    <td>All I Need</td>
+    <td>Radiohead</td>
+    <td>Melancholic</td>
+</tr>
+<tr>
+    <td>Go or Go On Ahead</td>
+    <td>Rufus Wainwright</td>
+    <td>Emotional</td>
+</tr>
+<tr>
+    <td>Not a Lot, Just Forever</td>
+    <td>Adrianne Lenker</td>
+    <td>Intimate</td>
+</tr>
+<tr>
+    <td>Step On Me</td>
+    <td>The Cardigans</td>
+    <td>Soft Pop</td>
+    
+</tr>
+<tr>
+    <td>It Ain't Me, Babe</td>
+    <td>Timothee Chalamet</td>
+    <td>Acoustic</td>
+    
+</tr>
+  </table>
+  <h2>Ranked Favorites</h2>
+  <ol>
+    <li>All I need</li>
+    <li>Go or Go On Ahead</li>
+    <li>Step On Me</li>
+    </ol>
+    <h2>Other songs I like</h2>
+    <ul>
+        <li>Sleep Talking by Indio De Souza</li>
+        <li>Wanted To by Bahia Inutil</li>
+        <li>You're Dead by Norma Tanega</li>
+    </ul>
+    <!--iframe thingy-->
+    <h2>All I Need by Radiohead:</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wUL8NklXDsw?si=6KpTw824LHeXyF-t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <button onclick="myfunction()">Click me!</button>
+<p id="demo"></p>
+<script>
+function myfunction() {
+    document.getElementById("demo").innerHTML = "🎶Congrats! You now have great music taste.(●'◡'●)";
+}
+</script>
+</body>
+</html>
