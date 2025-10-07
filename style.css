@@ -14,7 +14,7 @@ body{
 #container{
     width: 800px;
     margin: 0 auto;
-    background-color: rba(255, 248, 220, 0.8);
+    background-color: rgba(255, 248, 220, 0.3);
     border-radius: 15px;
     padding-bottom: 20px;
 }
@@ -72,7 +72,7 @@ input, textarea{
     padding: 8px;
     margin-bottom: 10px;
     border-radius: 5px;
-    border: 1px soild #ccc;
+    border: 1px solid #ccc;
     font-family: "Patrick Hand", cursive;  
 }
 input[type="submit"] {
@@ -89,7 +89,7 @@ input[type="submit"] {
 audio, video {
     display: block;
     margin: 10px auto;
-    border: 3px soild sienna;
+    border: 3px solid sienna;
     border-radius: 10px;
     background-color: #fffaf0;
 }
