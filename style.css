@@ -8,10 +8,19 @@ body{
     height: 100vh;
     background: url("background.jpeg") no-repeat center center fixed;
     background-size: cover;
+    font-family: "Patrick Hand", cursive;
+    color: #4a2e1f;
 }
 #container{
     width: 800px;
     margin: 0 auto;
+    background-color: rba(255, 248, 220, 0.8);
+    border-radius: 15px;
+    padding-bottom: 20px;
+}
+nav a:hover {
+    color: sienna;
+    text-decoration: underline;
 }
 .left{
     width: 380px;
@@ -33,9 +42,46 @@ body{
     padding: 10px 10px 10px;
     border: thick cornsilk solid;
 }
+.clear{
+    clear:both;
+}
+form {
+    background-color: rgba(172, 141, 46, 0.4);
+    padding: 15px;
+    border: 2px solid sienna;
+    border-radius: 10px;
+    width: 90%;
+    margin: 20px auto;
+}
+input, textarea{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px soild #ccc;
+    font-family: "Patrick Hand", cursive;  
+}
+input[type="submit"] {
+background-color: sienna;
+color: white;
+border: none;
+cursor: pointer;
+font-size: 1em;
+padding: 8px 15px;
+}
+input[type="submit"] {
+    background-color: #8b4513;
+}
+audio, video {
+    display: block;
+    margin: 10px auto;
+    border: 3px soild sienna;
+    border-radius: 10px;
+    background-color: #fffaf0;
+}
 footer{
     background-color:rgb(255, 255, 255);
-    clear: both;
+    color: #4a2e1f;
 }
 header > h1{
     text-align: center;
