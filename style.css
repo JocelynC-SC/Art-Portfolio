@@ -37,23 +37,23 @@ nav a:hover {
     text-decoration: underline;
 }
 .left{
-    width: 380px;
-    height: 200px;
+    width: 48%;
+    height: 300px;
     background-color:rgba(184, 134, 11, 0.5);
     border-radius: 20px;
     float: left;
-    margin:0px 10px 10px 15px;
-    padding: 10px 10px 10px;
+    margin:10px 1%;
+    padding: 10px;
     border: thick cornsilk solid;
 }
 .right{ 
-    width: 380px;
-    height: 200px;
+    width: 48%;
+    height: 300px;
     background-color:rgba(184, 134, 11, 0.5);
     border-radius: 20px;
     float: left;
-    margin:0px 0px 10px 0px;
-    padding: 10px 10px 10px;
+    margin:10px 1%;
+    padding: 10px;
     border: thick cornsilk solid;
 }
 .clear{
@@ -115,4 +115,35 @@ footer a:link{
   font-family: "Patrick Hand", cursive;
   font-weight: 400;
   font-style: normal;
+}
+@media (max-width: 900px){
+    #container{
+        width:95%
+    }
+}
+nav a {
+    display: inline-block;
+    margin: 10px;
+}
+@media (max-width:600px){
+    body{
+        background-size: cover;
+    }
+    header h1 {
+        font-size: 1.5em;
+    }
+    nav {
+        font-size: 1em;
+        padding: 8px;
+    }
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+    video{
+        width: 100%;
+    }
+    form {
+        width: 100%;
+    }
 }
