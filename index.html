@@ -6,6 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+<link rel="stylesheet" herf="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.cos">
 </head>
 <body>
     <div id="container">
@@ -30,6 +33,15 @@
         <p><a href=MyLink.html>Link</a></p>
     </article>
     <div class="clear"></div>
+    <div id="about-section">
+        <h3> About Me!</h3>
+        <div>
+            <p>Hello! I'm Jocelyn, an artist and animatior in San Antiono Texas.</p>
+        </div>
+        <h3>My Art Style</h3>
+        <p>I draw inspiration from shows such as Arcane for its style, and I draw semi-realistic portraits.</p>
+    </div>
+</div>
     <h2>Most recent animation WIP!</h2>
     <video width="400" controls>
         <source src="Animation.mp4" type="video/mp4">
@@ -48,5 +60,13 @@
  <footer><i>Copyright Jocelyn Cintron 2025</i>
 </footer>
     </div>
+    <script>
+    $(function() {
+        $("#about-section").accordion({
+            collapsible: true,
+            active: false
+        });
+    });
+</script>
 </body>
 </html>
