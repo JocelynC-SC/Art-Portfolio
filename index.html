@@ -3,70 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Art Portfolio</title>
     <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
-<link rel="stylesheet" herf="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.cos">
+
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
 </head>
+
 <body>
-    <div id="container">
+<div id="container">
+
 <header>
-    <h1 class="patrick-hand-regular">My art protfolio</h1>
+    <h1>My Art Portfolio</h1>
 </header>
+
 <nav>
     <a href="index.html">Home</a>
     <a href="gallery.html">Gallery</a>
     <a href="contact.html">Contact</a>
 </nav>
-<section>
-    <article class="left">
-        <img src="IMG_1900.png" alt="hello doodle" class="doodle"
-    usemap="#StarLink">
-    <map name="StarLink">
-<area shape="rect" coords="131,123,145,135" alt="StarLink" href="StarLink.html">
-<area shape="circle" coords="200" alt="The Drawing" href="thedrawing.html">
-    </map>
-    </article>
-    <article class="right">
-        <p><a href=MyLink.html>Link</a></p>
-    </article>
-    <div class="clear"></div>
-    <div id="about-section">
-        <h3> About Me!</h3>
-        <div>
-            <p>Hello! I'm Jocelyn, an artist and animatior in San Antiono Texas.</p>
-        </div>
-        <h3>My Art Style</h3>
-        <p>I draw inspiration from shows such as Arcane for its style, and I draw semi-realistic portraits.</p>
+
+<!-- Polaroid Doodle -->
+<div class="polaroid">
+    <img src="IMG_1900.png" alt="Doodle">
+    <p>“Hello, Welcome!”</p>
+</div>
+
+<!-- About Accordion -->
+<div id="about-section">
+    <h3>About Me</h3>
+    <div>
+        <p>Hello! I'm Jocelyn, an artist and animator based in San Antonio, Texas.</p>
+    </div>
+
+    <h3>My Style</h3>
+    <div>
+        <p>I draw inspiration from shows like Arcane and enjoy creating semi-realistic portraits.</p>
     </div>
 </div>
-    <h2>Most recent animation WIP!</h2>
-    <video width="400" controls>
-        <source src="Animation.mp4" type="video/mp4">
+
+<!-- Video Polaroid -->
+<div class="video-frame">
+    <video width="450" controls>
+        <source src="WIP Animation.mp4" type="video/mp4">
     </video>
-    <h2>Contact me!</h2>
-    <form>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" placeholder="Your Name"><br><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" placeholder="example@gmail.com"><br><br>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" cols="40" placeholder="write something..."></textarea><br><br>
-        <input type="submit" value="Send Message">
-    </form>
-</section>
- <footer><i>Copyright Jocelyn Cintron 2025</i>
+    <p style="text-align:center;">Latest Animation WIP</p>
+</div>
+
+<footer>
+    <i>Copyright © Jocelyn Cintron 2025</i>
 </footer>
-    </div>
-    <script>
-    $(function() {
-        $("#about-section").accordion({
-            collapsible: true,
-            active: false
-        });
+
+</div>
+
+<script>
+$(function() {
+    $("#about-section").accordion({
+        collapsible: true,
+        active: false
     });
+});
 </script>
+
 </body>
 </html>
